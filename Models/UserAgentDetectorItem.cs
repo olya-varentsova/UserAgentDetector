@@ -7,8 +7,6 @@ namespace UserAgentDetector.Models
 {
     public class UserAgentDetectorItem
     {
-        /*Response*/
-
         public string client_summary { get; set; }
         public string ua_family { get; set; }
         public string ua_version { get; set; }
