@@ -19,7 +19,11 @@ namespace UserAgentDetector.Controllers
                 userAgent = Request.Headers["User-Agent"];
             }
             IDeviceInfoService deviceInfoService = Request.HttpContext.RequestServices.GetService<IDeviceInfoService>();
-            
+
+            deviceInfoService = Request.HttpContext.RequestServices.GetService<IDeviceInfoService>();
+
+            deviceInfoService = Request.HttpContext.RequestServices.GetService<IDeviceInfoService>();
+
             return deviceInfoService.getInfo(userAgent);
         }
 
